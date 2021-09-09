@@ -1,3 +1,4 @@
+console.log("server check")
 const address=document.querySelector('form')
 const search =document.querySelector('input')
 const msg1 =document.querySelector('#m1')
