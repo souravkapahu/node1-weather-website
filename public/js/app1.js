@@ -12,7 +12,7 @@ msg2.textContent=""
 
 const x=search.value
 
-fetch('http://localhost:1002/weather?address='+ x).then((response)=>{
+fetch('/weather?address='+ x).then((response)=>{
     response.json().then((data)=>{
         if (data.error){
             // console.log(data.error)

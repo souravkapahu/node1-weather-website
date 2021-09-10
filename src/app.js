@@ -6,7 +6,8 @@ const geocode =  require('./utils/geocoding')
 
 
 const app=express()
-
+//port for heroku & locally 
+const port = process.env.PORT || 1002
 //paths
 const partialpath=path.join(__dirname,'../templates/partial')
 const viewpath =path.join(__dirname,'../templates/views')
@@ -57,6 +58,6 @@ app.get('/about',(req,res)=>{
     })
 })
 
-app.listen(1002,()=>{
-    console.log('server upto mark')
+app.listen(port,()=>{
+    console.log('server upto mark on '+port)
 })
